@@ -12,7 +12,7 @@ class GitHub{
     const profileResponse = await fetch(`https://api.github.com/users/${user}?client_id=${this.client_id}&?client_secret=${this.client_secret}`,
     { 
       headers: {
-        authorization: "token 117bffaeca06ce967264414e9e181ed7ffdd0576"
+        authorization: "token 2ed678e3e3cf2a23d921a7282dba5143a0e5aff7"
       }
     });
 
@@ -20,7 +20,7 @@ class GitHub{
     const reposResponse = await fetch(`https://api.github.com/users/${user}/repos?per_page=${this.repos_count}&sort=${this.repose_sort}&client_id=${this.client_id}&?client_secret=${this.client_secret}`,
     {
       headers: {
-        authorization: "token 117bffaeca06ce967264414e9e181ed7ffdd0576"
+        authorization: "token 2ed678e3e3cf2a23d921a7282dba5143a0e5aff7"
       }
     });
   
